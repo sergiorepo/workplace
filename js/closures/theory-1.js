@@ -8,7 +8,6 @@
 * 5. Later, we execute greet(), which is actually inner().
 * 6. The function successfully accesses message, even though outer() has already returned.
 */
-
 function outer() {
     let message = "Hello!";
 
@@ -94,8 +93,10 @@ function Counter() {
 /*
 * handleClick is a closure. It accesses count from the component render in which it was created.
 *
-* When React renders the component again, it creates a new render scope and normally a new handleClick function associated with that render.
-* This explains why callbacks sometimes see stale state: an older callback may still reference values from an older render.
+* When React renders the component again, it creates a new render scope and normally a new handleClick function
+* associated with that render.
+* This explains why callbacks sometimes see stale state: an older callback may still reference values from an older
+* render.
 * It also helps explain why functional state updates can be preferable:
 */
 setCount(prevCount => prevCount + 1);
