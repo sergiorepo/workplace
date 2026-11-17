@@ -1,0 +1,7 @@
+/*
+Practical closure patterns
+
+
+
+
+*/
